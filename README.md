@@ -4,6 +4,10 @@ For the React developer easily to search documentation when you working hard.
 
 ## Just `COPY` and `Automatically` to open the web page.
 
+# Demo
+
+![React Doc Searcher](./gif/react-doc-searcher.gif)
+
 # Installation
 
 ```
