@@ -18,7 +18,9 @@
   },
   "license": "MIT",
   "dependencies": {
+    "chalk": "^2.4.2",
     "clipboardy": "^1.2.3",
+    "keypress": "^0.2.1",
     "open": "^6.0.0"
   }
 }

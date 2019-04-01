@@ -1,7 +1,10 @@
 const clipboardy = require('clipboardy');
 const open = require('open');
+const keypress = require('keypress');
+const chalk = require('chalk');
 
 function openWeb(key) {
+  console.log(chalk.green(`搜尋 '${key}' - Search '${key}'`));
   switch (key) {
     case 'react':
     case 'React':
@@ -44,13 +47,31 @@ function openWeb(key) {
 
 let last_clipboardy = '';
 let the_first = true;
+let disable = false;
+
+keypress(process.stdin);
+process.stdin.on('keypress', (_, key) => {
+  if (key.ctrl && key.name === 'c') {
+    process.exit(1);
+  }
+  if (key.name === 'o') {
+    disable = !disable;
+    if (!disable) {
+      console.log(chalk.green('啟用搜索 - Enable Search'));
+    } else {
+      console.log(chalk.grey('關閉搜索 - Disable Search'));
+    }
+  }
+});
+process.stdin.setRawMode(true);
+process.stdin.resume();
 
 function worker() {
   setTimeout(() => {
     const new_clipboardy = clipboardy.readSync();
     if (last_clipboardy !== new_clipboardy) {
       last_clipboardy = new_clipboardy;
-      openWeb(new_clipboardy);
+      if (!disable) openWeb(new_clipboardy);
     }
     worker();
   }, 500);
@@ -61,7 +82,9 @@ function runBin() {
     last_clipboardy = clipboardy.readSync();
     worker();
     the_first = false;
-    console.log('Wait for copy anything...');
+    console.log(
+      chalk.yellow('Wait for copy anything and Press Ctrl + C to exit process.')
+    );
   }
 }
 
