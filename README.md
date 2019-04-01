@@ -22,7 +22,7 @@ For the React developer easily to search documentation when you working hard.
 # just copy keyword
 ```
 
-## \* If you want to disable copy search, just press "o" key.
+## \* If you want to disable copy search, just press "o" key like "on" and "off".
 
 # Alias
 
