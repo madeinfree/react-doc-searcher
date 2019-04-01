@@ -22,6 +22,8 @@ For the React developer easily to search documentation when you working hard.
 # just copy keyword
 ```
 
+## \* If you want to disable copy search, just press "o" key.
+
 # Alias
 
 ```
@@ -33,6 +35,7 @@ For the React developer easily to search documentation when you working hard.
 - ReactDoc High Level Component
 - ReactDoc LifeCycle
 - ReactDoc Hooks
+- Disable & Enable Keypress (use "o" key)
 - And other from google search.
 
 # PR welcome

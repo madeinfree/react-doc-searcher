@@ -82,9 +82,11 @@ function runBin() {
     last_clipboardy = clipboardy.readSync();
     worker();
     the_first = false;
-    console.log(
-      chalk.yellow('Wait for copy anything and Press Ctrl + C to exit process.')
-    );
+    console.log(chalk.yellow('Wait for copy anything'));
+    console.log('------ Tips ------');
+    console.log(chalk.yellow('* Press ctrl + c to exit process.'));
+    console.log(chalk.yellow('* Press "o" key to disable search.'));
+    console.log('------------------');
   }
 }
 
