@@ -1,5 +1,8 @@
 # React Doc Searcher
 
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/madeinfree/react-doc-searcher/blob/master/LICENSE)
+[![npm version](https://img.shields.io/npm/v/react-doc-searcher.svg?style=flat)](https://www.npmjs.com/package/react-doc-searcher)
+
 For the React developer easily to search documentation when you working hard.
 
 ## Just `COPY` and `Automatically` to open the web page.
