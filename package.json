@@ -1,0 +1,24 @@
+{
+  "name": "react-doc-searcher",
+  "version": "1.0.3",
+  "description": "For the React developer easily to search documentation when you working hard.",
+  "main": "index.js",
+  "bin": {
+    "react-doc-searcher": "./bin/cli.js"
+  },
+  "files": [
+    "bin",
+    "./index.js",
+    "./README.md"
+  ],
+  "author": {
+    "name": "Whien_Liou",
+    "url": "https://madeinfree.github.io/whien-dev-blog/",
+    "email": "sal95610@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "clipboardy": "^1.2.3",
+    "open": "^6.0.0"
+  }
+}
