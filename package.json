@@ -1,6 +1,6 @@
 {
   "name": "react-doc-searcher",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "For the React developer easily to search documentation when you working hard.",
   "main": "index.js",
   "bin": {
